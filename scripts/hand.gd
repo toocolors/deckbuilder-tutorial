@@ -5,7 +5,7 @@ extends Node2D
 @export var card_angle: float = 90
 
 @onready var collision_shape: CollisionShape2D = $DebugShape
-@onready var test_card = $AttackCard
+@onready var test_card = $TestCard
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
