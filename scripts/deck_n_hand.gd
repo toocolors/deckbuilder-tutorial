@@ -3,7 +3,7 @@ extends Node2D
 @onready var attack_card_scene: PackedScene = preload("res://scenes/cards/attack_card.tscn")
 @onready var defend_card_scene: PackedScene = preload("res://scenes/cards/defend_card.tscn")
 
-@onready var spawn_point = $CanvasLayer/Spawn
+@onready var hand = $CanvasLayer/Hand
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,9 +17,9 @@ func _process(delta: float) -> void:
 
 func _on_button_pressed() -> void:
 	var card = attack_card_scene.instantiate()
-	spawn_point.add_child(card)
+	hand.add_card(card)
 
 
 func _on_button_2_pressed() -> void:
 	var card = defend_card_scene.instantiate()
-	spawn_point.add_child(card)
+	hand.add_card(card)

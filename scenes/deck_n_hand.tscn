@@ -9,7 +9,7 @@ script = ExtResource("1_fmhf8")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1415013675]
 
 [node name="Hand" parent="CanvasLayer" unique_id=1914482994 instance=ExtResource("2_fmhf8")]
-position = Vector2(320, 1300)
+position = Vector2(320, 1200)
 
 [node name="Button" type="Button" parent="." unique_id=1751398790]
 offset_right = 8.0
