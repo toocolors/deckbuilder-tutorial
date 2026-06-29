@@ -1,6 +1,6 @@
 class_name Card extends Node2D
 
-@export var  card_name: String = "Card Name"
+@export var card_name: String = "Card Name"
 @export var card_desc: String = "Card Description"
 @export var card_cost: int = 1
 @export var card_image: Node2D
@@ -10,9 +10,16 @@ class_name Card extends Node2D
 @onready var name_label: Label = $CardName/NameLabel
 
 func _ready():
-	cost_label.set_text(str(card_cost))
-	desc_label.set_text(card_desc)
-	name_label.set_text(card_name)
+	set_values(card_cost, card_desc, card_name)
+
+func set_values(new_cost: int, new_desc: String, new_name: String) -> void:
+	card_cost = new_cost
+	card_desc = new_desc
+	card_name = new_name
+	
+	cost_label.set_text(str(new_cost))
+	desc_label.set_text(new_desc)
+	name_label.set_text(new_name)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
