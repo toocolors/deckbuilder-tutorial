@@ -1,5 +1,24 @@
 [gd_scene format=3 uid="uid://cpfxyt3jp2uf7"]
 
+[ext_resource type="Script" uid="uid://b2uwy50iagtvw" path="res://scripts/deck_n_hand.gd" id="1_fmhf8"]
+[ext_resource type="PackedScene" uid="uid://dd0imekdaqvfq" path="res://scenes/card.tscn" id="1_lb4i6"]
+
 [node name="DeckNHand" type="Node2D" unique_id=1568606125]
+script = ExtResource("1_fmhf8")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1415013675]
+
+[node name="Spawn" type="Node2D" parent="CanvasLayer" unique_id=1362466708]
+
+[node name="Button" type="Button" parent="." unique_id=1751398790]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Create Card 1"
+
+[node name="Button2" type="Button" parent="." unique_id=803640632]
+offset_top = 35.0
+offset_right = 113.0
+offset_bottom = 66.0
+text = "Create Card 2"
+
+[node name="Card" parent="." unique_id=796531875 instance=ExtResource("1_lb4i6")]
