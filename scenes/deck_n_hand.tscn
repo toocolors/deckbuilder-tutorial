@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://cpfxyt3jp2uf7"]
 
 [ext_resource type="Script" uid="uid://b2uwy50iagtvw" path="res://scripts/deck_n_hand.gd" id="1_fmhf8"]
+[ext_resource type="PackedScene" uid="uid://c14hgxe3512g6" path="res://scenes/hand.tscn" id="2_fmhf8"]
 
 [node name="DeckNHand" type="Node2D" unique_id=1568606125]
 script = ExtResource("1_fmhf8")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1415013675]
 
-[node name="Spawn" type="Node2D" parent="CanvasLayer" unique_id=1362466708]
-position = Vector2(320, 180)
+[node name="Hand" parent="CanvasLayer" unique_id=1914482994 instance=ExtResource("2_fmhf8")]
+position = Vector2(320, 1300)
 
 [node name="Button" type="Button" parent="." unique_id=1751398790]
 offset_right = 8.0
