@@ -19,12 +19,10 @@ func set_values(new_cost: int, new_desc: String, new_name: String, new_image: No
 	card_desc = new_desc
 	card_name = new_name
 	card_image_sprite = new_image
-	
-	update_graphics()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	update_graphics()
 
 func update_graphics():
 	if cost_label.get_text() != str(card_cost):
