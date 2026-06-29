@@ -17,5 +17,12 @@ func _process(delta: float) -> void:
 func _on_button_pressed() -> void:
 	var card = card_scene.instantiate()
 	spawn_point.add_child(card)
-	card.set_values(3, "Card Description", "New Card")
+	card.set_values(1, "First Card Description", "Card One")
+	card.visible = true
+
+
+func _on_button_2_pressed() -> void:
+	var card = card_scene.instantiate()
+	spawn_point.add_child(card)
+	card.set_values(2, "Second Card Description", "Card Two")
 	card.visible = true
