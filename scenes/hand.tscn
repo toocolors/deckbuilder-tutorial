@@ -2,5 +2,11 @@
 
 [ext_resource type="Script" uid="uid://473nnkvxyq4l" path="res://scripts/hand.gd" id="1_eyfoh"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_i2ses"]
+radius = 100.0
+
 [node name="Hand" type="Node2D" unique_id=1914482994]
 script = ExtResource("1_eyfoh")
+
+[node name="DebugShape" type="CollisionShape2D" parent="." unique_id=1562641591]
+shape = SubResource("CircleShape2D_i2ses")
