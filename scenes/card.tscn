@@ -2,6 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://crikcsijtp416" path="res://assets/sprites/card_base.png" id="1_d81rb"]
 [ext_resource type="Texture2D" uid="uid://dj7ljqoivbjxp" path="res://assets/sprites/mana_slot.png" id="2_6u4wf"]
+[ext_resource type="FontFile" uid="uid://b5w5r1y3ikecg" path="res://assets/fonts/MemoryPro.ttf" id="3_ktuci"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6u4wf"]
+font = ExtResource("3_ktuci")
 
 [node name="Card" type="Node2D" unique_id=796531875]
 
@@ -16,6 +20,9 @@ position = Vector2(33, -58)
 texture = ExtResource("2_6u4wf")
 
 [node name="Label" type="Label" parent="CostDisplay" unique_id=2094569802]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -2.0
+offset_top = -8.0
+offset_right = 38.0
+offset_bottom = 15.0
 text = "2"
+label_settings = SubResource("LabelSettings_6u4wf")
