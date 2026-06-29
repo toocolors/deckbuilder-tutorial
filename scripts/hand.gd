@@ -24,6 +24,7 @@ func _process(delta: float) -> void:
 
 func add_card(card: Node2D) -> void:
 	hand.push_back(card)
+	add_child(card)
 	reposition_cards()
 
 func get_card_position(angle_in_deg:float) -> Vector2:
@@ -33,7 +34,7 @@ func get_card_position(angle_in_deg:float) -> Vector2:
 
 func reposition_cards():
 	var card_spread = min(angle_limit / hand.size(), max_card_spread_angle)
-	var current_angle = -((card_spread * hand.size()) / 2) - 90
+	var current_angle = -(card_spread * (hand.size() - 1)) / 2 - 90
 	for card in hand:
 		update_card_transform(card, current_angle)
 		current_angle += card_spread
