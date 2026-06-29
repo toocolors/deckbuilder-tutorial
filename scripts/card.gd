@@ -3,7 +3,7 @@ class_name Card extends Node2D
 @export var card_name: String = "Card Name"
 @export var card_desc: String = "Card Description"
 @export var card_cost: int = 1
-@export var card_image: Node2D
+@export var card_image: Sprite2D
 
 @onready var cost_label: Label = $CostDisplay/CostLabel
 @onready var desc_label: Label = $CardDescription
