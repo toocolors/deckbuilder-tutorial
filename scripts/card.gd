@@ -11,6 +11,7 @@ class_name Card extends Node2D
 
 func _ready():
 	set_values(card_cost, card_desc, card_name)
+	visible = false
 
 func set_values(new_cost: int, new_desc: String, new_name: String) -> void:
 	card_cost = new_cost
