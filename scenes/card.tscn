@@ -10,9 +10,11 @@ font = ExtResource("3_ktuci")
 
 [sub_resource type="LabelSettings" id="LabelSettings_i2ses"]
 font = ExtResource("3_ktuci")
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_p5ibq"]
 font = ExtResource("3_ktuci")
+font_color = Color(0, 0, 0, 1)
 
 [node name="Card" type="Node2D" unique_id=796531875]
 
