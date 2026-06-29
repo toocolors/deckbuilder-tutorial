@@ -9,6 +9,7 @@ radius = 1000.0
 [node name="Hand" type="Node2D" unique_id=1914482994]
 script = ExtResource("1_eyfoh")
 hand_radius = 1000
+max_card_spread_angle = 4.0
 
 [node name="TestCard" parent="." unique_id=307022461 instance=ExtResource("2_cmdsa")]
 visible = false
