@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dd0imekdaqvfq"]
+
+[node name="Card" type="Node2D" unique_id=796531875]
+
+[node name="BaseCardSprite" type="Sprite2D" parent="." unique_id=698306052]
