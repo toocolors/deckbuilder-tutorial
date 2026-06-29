@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dd0imekdaqvfq"]
 
 [ext_resource type="Texture2D" uid="uid://crikcsijtp416" path="res://assets/sprites/card_base.png" id="1_d81rb"]
+[ext_resource type="Script" uid="uid://cbw4fashpobpd" path="res://scripts/card.gd" id="1_sy11y"]
 [ext_resource type="Texture2D" uid="uid://dj7ljqoivbjxp" path="res://assets/sprites/mana_slot.png" id="2_6u4wf"]
 [ext_resource type="FontFile" uid="uid://b5w5r1y3ikecg" path="res://assets/fonts/MemoryPro.ttf" id="3_ktuci"]
 [ext_resource type="Texture2D" uid="uid://cl1djuvdbp0qe" path="res://assets/sprites/attack_card_image.png" id="4_kg30u"]
@@ -17,6 +18,7 @@ font = ExtResource("3_ktuci")
 font_color = Color(0, 0, 0, 1)
 
 [node name="Card" type="Node2D" unique_id=796531875]
+script = ExtResource("1_sy11y")
 
 [node name="BaseCardSprite" type="Sprite2D" parent="." unique_id=698306052]
 texture_filter = 1
