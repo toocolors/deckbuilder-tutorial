@@ -30,7 +30,7 @@ position = Vector2(33, -58)
 [node name="CostBaseSprite" type="Sprite2D" parent="CostDisplay" unique_id=1699229670]
 texture = ExtResource("2_6u4wf")
 
-[node name="CostLbl" type="Label" parent="CostDisplay" unique_id=2094569802]
+[node name="CostLabel" type="Label" parent="CostDisplay" unique_id=2094569802]
 offset_left = -2.0
 offset_top = -8.0
 offset_right = 38.0
@@ -40,7 +40,7 @@ label_settings = SubResource("LabelSettings_6u4wf")
 
 [node name="CardName" type="Node2D" parent="." unique_id=408478210]
 
-[node name="NameLbl" type="Label" parent="CardName" unique_id=1902141943]
+[node name="NameLabel" type="Label" parent="CardName" unique_id=1902141943]
 offset_left = -21.0
 offset_top = -61.0
 offset_right = 21.0
