@@ -1,5 +1,9 @@
 extends Node2D
 
+@export var  cardName: String = "Card Name"
+@export var cardDescription: String = "Card Description"
+@export var cardCost: int = 1
+@export var cardImage: Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
