@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://dd0imekdaqvfq"]
 
+[ext_resource type="Texture2D" uid="uid://crikcsijtp416" path="res://assets/sprites/card_base.png" id="1_d81rb"]
+
 [node name="Card" type="Node2D" unique_id=796531875]
 
 [node name="BaseCardSprite" type="Sprite2D" parent="." unique_id=698306052]
+texture = ExtResource("1_d81rb")
