@@ -1,12 +1,18 @@
 [gd_scene format=3 uid="uid://c14hgxe3512g6"]
 
 [ext_resource type="Script" uid="uid://473nnkvxyq4l" path="res://scripts/hand.gd" id="1_eyfoh"]
+[ext_resource type="PackedScene" uid="uid://bhi3hmway52di" path="res://scenes/cards/attack_card.tscn" id="2_cmdsa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i2ses"]
 radius = 100.0
 
 [node name="Hand" type="Node2D" unique_id=1914482994]
 script = ExtResource("1_eyfoh")
+card_angle = -66.165
+
+[node name="AttackCard" parent="." unique_id=307022461 instance=ExtResource("2_cmdsa")]
+position = Vector2(40.410416, -91.4713)
+rotation = -0.41599923
 
 [node name="DebugShape" type="CollisionShape2D" parent="." unique_id=1562641591]
 shape = SubResource("CircleShape2D_i2ses")
