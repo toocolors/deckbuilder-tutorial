@@ -1,8 +1,21 @@
 [gd_scene format=3 uid="uid://dd0imekdaqvfq"]
 
 [ext_resource type="Texture2D" uid="uid://crikcsijtp416" path="res://assets/sprites/card_base.png" id="1_d81rb"]
+[ext_resource type="Texture2D" uid="uid://dj7ljqoivbjxp" path="res://assets/sprites/mana_slot.png" id="2_6u4wf"]
 
 [node name="Card" type="Node2D" unique_id=796531875]
 
 [node name="BaseCardSprite" type="Sprite2D" parent="." unique_id=698306052]
+texture_filter = 1
 texture = ExtResource("1_d81rb")
+
+[node name="CostDisplay" type="Node2D" parent="." unique_id=1650097602]
+position = Vector2(33, -58)
+
+[node name="CostBaseSprite" type="Sprite2D" parent="CostDisplay" unique_id=1699229670]
+texture = ExtResource("2_6u4wf")
+
+[node name="Label" type="Label" parent="CostDisplay" unique_id=2094569802]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "2"
