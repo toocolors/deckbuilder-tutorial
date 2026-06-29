@@ -5,10 +5,10 @@
 
 [node name="AttackCard" type="Node2D" unique_id=307022461]
 
-[node name="Card" parent="." unique_id=796531875 node_paths=PackedStringArray("card_image") instance=ExtResource("1_3ikgh")]
+[node name="Card" parent="." unique_id=796531875 node_paths=PackedStringArray("card_image_sprite") instance=ExtResource("1_3ikgh")]
 card_name = "Attack"
 card_desc = "Damage 1"
-card_image = NodePath("../CardImage")
+card_image_sprite = NodePath("../CardImage")
 
 [node name="CardImage" type="Sprite2D" parent="." unique_id=1019031722]
 visible = false
