@@ -22,3 +22,5 @@ offset_bottom = 66.0
 text = "Create Card 2"
 
 [node name="Card" parent="." unique_id=796531875 instance=ExtResource("1_lb4i6")]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
