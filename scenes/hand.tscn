@@ -9,12 +9,11 @@ radius = 1000.0
 [node name="Hand" type="Node2D" unique_id=1914482994]
 script = ExtResource("1_eyfoh")
 hand_radius = 1000
-card_angle = 0.0
 
 [node name="TestCard" parent="." unique_id=307022461 instance=ExtResource("2_cmdsa")]
 visible = false
-position = Vector2(1000, 0)
-rotation = 1.5707964
+position = Vector2(6.123032e-14, 1000)
+rotation = 3.1415927
 
 [node name="DebugShape" type="CollisionShape2D" parent="." unique_id=1562641591]
 shape = SubResource("CircleShape2D_i2ses")
